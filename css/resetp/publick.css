@@ -1,0 +1,32 @@
+a{
+	text-decoration: none;
+	color:#000;
+}
+ul,ol li{
+	list-style: none;
+}
+.wrap{width:1200px;
+	margin:0 auto;
+}
+body,html{
+	width:100%
+}
+/*清除父子外边距折叠影响 无浮动*/
+/*使用空的table标签填充*/
+.box:before{
+	content:"";
+	display:table;
+}
+/*加给父元素*/
+
+/*浮动清除万能公式*/
+
+.clearfix::after{content:"";
+clear:both;
+display:block;
+visibility:hidden;
+overflow:hidden;
+font-size:0;
+height:0;}
+
+

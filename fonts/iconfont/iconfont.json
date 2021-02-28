@@ -1,0 +1,58 @@
+{
+  "id": "2351975",
+  "name": "guome",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "397898",
+      "name": "移动端，手机端",
+      "font_class": "shouji",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "651208",
+      "name": "我的会员",
+      "font_class": "huangjinhuiyuan0101-copy",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "1068808",
+      "name": "优惠券",
+      "font_class": "weibiaoti2fuzhi02",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "2021580",
+      "name": "充流量",
+      "font_class": "chongliuliang",
+      "unicode": "e73d",
+      "unicode_decimal": 59197
+    },
+    {
+      "icon_id": "16370611",
+      "name": "serviceProduct",
+      "font_class": "serviceProduct",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "16734265",
+      "name": "连接客户-icon256",
+      "font_class": "lianjiekehu-icon256",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7501069",
+      "name": "手机号",
+      "font_class": "shoujihao",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}

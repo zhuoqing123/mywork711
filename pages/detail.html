@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情</title>
+    <link rel="stylesheet" href="../css/resetp/reset.css"/>
+    <link rel="stylesheet" href="../css/resetp/publick.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+      
+        .goods-name{
+            width: 480px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #5e5e5e;
+    font-weight: 600;
+        }
+        .lingshou{
+            color: #888;
+            font: 12px/12px arial,Microsoft YaHei;
+            line-height: 34px;
+        }
+        .price_all{
+             width: 600px;
+             
+            padding: 20px 10px 0;
+             background: #f6f6f6
+        }
+        .price-center{
+            
+    font-family: Arial;
+    font-size: 24px;
+    color: #e3101e;
+    font-weight: 700;
+    margin-right: 10px;
+        }
+
+
+        /* 放大镜 */
+        #media-left{
+            width:400px;
+            height:400px;
+            border:1px solid #ccc;
+            position:relative;
+            cursor:not-allowed;
+
+        }
+
+        #media-left .show{
+            
+            width:400px;
+            height:400px;
+            position:relative;
+            cursor:not-allowed;
+            
+
+            
+
+        }
+        .show img{
+            width:100%;
+            height:100%;
+        }
+        .show .mask{
+            width:200px;
+            height:200px;
+            background-color: rgba(0,0,0,0.3);
+            position:absolute;
+            top:0px;
+            left:0px;
+            display: none;
+            pointer-events: none;
+        }
+        .show .mask.active{
+            display:block;
+        }
+        #media-left>.enlarge.active{
+            display:block;
+        }
+       #media-left>.enlarge{
+           width:400px;
+           height:400px;
+           /* border:1px solid #e3101e; */
+           position:absolute;
+           left:100%;
+           top:0px;
+           display:none;
+           z-index:1000;
+           
+          
+
+       }
+       /* .enlarge img{
+            position: absolute;
+            width:800px;
+            height:800px;
+        } */
+            
+       
+    </style>
+</head>
+<body>
+    
+    <div class="gome-top">
+        <div id="gome-top-body" class="wrap">
+         <ul class="top-left">
+             <li><b id="login-div">
+                 <a href="">真快乐会员
+                 </a>
+                 <i></i>
+             </b>
+             </li>
+ 
+             <li class="gome-link">
+                 <a href="">登录</a><a href="./signin.html" class="gome-link-register">注册有礼
+                     <i></i>
+                 </a>
+             
+         </li>
+         </ul>
+ 
+         <ul id="top-right">
+    <li class="gome-link"><a href="#">我的订单</a></li>
+    <li><b><a href="#">个人中心</a>
+     <i></i>
+ </b></li>
+    <li><b>
+        <a href="#">企业采购</a>
+        <i></i>
+     </b></li>
+    <li>
+        <b><a href="#">服务中心</a><i></i></b>
+     </li>
+    <li><b><a href="#">网站导航</a>
+     <i></i></b></li>
+    <li><b><a href="#">真快乐APP</a><i></i></b></li>
+ 
+ 
+         </ul>
+ 
+ 
+ 
+        </div> 
+ 
+     </div>
+ <!-- gome -top 结束 -->
+ <div id="gome-head" class="wrap clearfix">
+ <div id="logo">
+    <a herf="#"></a>
+ </div>
+ <div class="head-search">
+ <div class="search-box" style="    border: 2px solid rgb(227, 16, 30);">
+ <form id="search-Form" method="GET">
+     <div id="search-type-dropdown">
+ <div class="search-type">
+ <span class="search-type-selected" > 商</span>
+ <!-- <i></i> -->
+ </div>
+ <ul class="search-type-list" style="display:none" >
+ 
+     <li class="search-type-item">商</li>
+     <li class="search-type-item">店铺</li>
+ </ul>
+ 
+     </div>
+ <label id="keyLabel" default="美的空调,1;海尔洗衣机,1;" style="display:none">冰箱</label>
+ <input type="text" id="searchInput" name="question" autocomplete="off">
+ <button type="button" class="search-btn">搜索
+ 
+ </button>
+ <div class="voice-search">
+ 
+ </div>
+ 
+ 
+ </form>
+ </div>
+ <div class="hotKeyword" style="display:block">
+ <a  class="highlight" rel ="nofollow" href="#">购5G手机</a>
+ <a  rel ="nofollow" href="#">华为nova7</a>
+ <a  rel ="nofollow" href="#">荣耀30S</a>
+ <a  rel ="nofollow" href="#">OPPO Reno4</a>
+ <a rel ="nofollow" href="#">小米10</a>
+ <!-- <a rel ="nofollow" href="#">平板电脑</a>
+ <a rel ="nofollow" href="#">电烤箱</a>
+ <a class="highlight" rel ="nofollow"href="#">火锅食材开店</a> -->
+ 
+ </div>
+ </div>
+ <div class="mygome-side" data-cart="mincart">
+     <ul class="topmenu clearfix">
+        <li class="shopcartbox">
+            <span class="cartlinkbox">
+             <a rel="nofollow" class="menulink cartlink" href="#">
+                 <em class="i-cart">
+                     <span class="shopnum">
+                         <span id="commerceItemQuantityId">0</span>
+                         <i></i>
+                     </span>
+                     
+                 </em>
+                 <span id="hdrcarttext"></span>
+                 <b></b>
+             </a>
+            </span>
+        </li>
+        
+     </ul>
+ 
+ 
+ 
+ </div>
+ 
+ </div>
+
+ <!-- gome-head 结束 -->
+
+
+ <div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">商品详细信息</div>
+        <div class="panel-body">
+            <div class="media">
+                
+                    <div class="media-left media-middle" id="media-left">
+                        <div class="show">
+                            <a href="#">
+                                <img class="media-object" src="../images/product1.jpg" alt="...">
+                              </a>
+                              <div class="mask">
+
+                              </div>
+                        </div>
+                        <div class="enlarge" style=" background:url(../images/product1.jpg) no-repeat;  background-size: 800px 800px;
+                        background-position: 0 0;">
+                             
+                         </div> 
+                        
+                        
+
+
+
+                 </div>
+                <div class="media-body">
+                  <h4 class="media-heading goods-name">Apple iPhone 12 Pro 256G 海蓝色 移动联通电信5G手机</h4>
+                  <h2 class="price_all"><i class="lingshou">零售价</i><span class="price-center">￥6599</span></h2>
+                  <p><i class="lingshou">零售价</i></p>
+                  <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">银色</button>
+                    <button type="button" class="btn btn-default">石墨色</button>
+                    <button type="button" class="btn btn-default">金色</button>
+                    <button type="button" class="btn btn-default">海蓝色</button>
+                  </div>
+                  <br/><br/>
+                  <a href="#" class="btn btn-info">立即购买</a>
+                  <a href="#" class="btn btn-success">加入购物车</a>
+                </div>
+                <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+              </div>
+        </div>
+      </div> 
+ </div>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<script src="../js/jquery/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/ajax.js"></script>
+
+<script src="../js/detail.js"></script>
+<script src="../js/enlarge.js"></script>
+
+<script>
+
+
+var  e= new Enlarge("#media-left")
+        e.getProp()
+        e.overOut()
+        e.setScale()
+        e.move()
+
+
+
+
+ 
+</script>
+
+</body>
+</html>
